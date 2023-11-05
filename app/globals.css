@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+*{
+    font-family: 'lato', sans-serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+/* Section headings */
+.p24-section-heading {
+  color: #440952;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Input labels */
+.input {
+  color: #100115;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* Input text */
+.label-text {
+  color: #829191;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.height-50{
+    min-height: 50%
+}
+
+/* START: Hero styles */
+.hero {
+  @apply flex xl:flex-row flex-col gap-5 relative  max-w-[1440px]  bg-white px-12;
+}
+
+.hero__title {
+  @apply 2xl:text-[48px] sm:text-[38px] text-[28px] font-extrabold text-primary;
+}
+
+.hero__subtitle {
+  @apply text-[27px] text-black-100 font-light mt-5;
+}
+
+.hero__image-container {
+  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
+}
+
+.hero__image {
+  @apply relative xl:w-full w-full xl:h-full h-[590px] z-0;
+}
+
+.hero__image-overlay {
+  @apply absolute xl:-top-24 xl:right-0 -right-1/4  bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+}
+
+/* END: Hero styles */

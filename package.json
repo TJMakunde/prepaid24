@@ -1,0 +1,23 @@
+{
+  "name": "prepaid26",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "shoot": "NODE_ENV=production node server.js",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "daisyui": "^3.9.2",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}
